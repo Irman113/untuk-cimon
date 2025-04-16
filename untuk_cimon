@@ -1,0 +1,20 @@
+class CintaUntukCimon:
+    def _init_(self):
+        self.nama = "Cimon"
+        self.status = "sakit (tapi masih imut)"
+        self.dosis_cinta = ["peluk virtual", "kata-kata manis", "lawakan receh", "doa tulus", "janji traktir setelah sembuh"]
+
+    def cek_status(self):
+        print(f"{self.nama} sekarang lagi {self.status}. Tapi jangan khawatir, cinta ini siap jadi obat.")
+
+    def kirim_cinta(self):
+        print("Mengirim cinta dan perhatian secara bertubi-tubi...")
+        for item in self.dosis_cinta:
+            print(f">> {item} terkirim dengan sukses!")
+        self.status = "senyum-senyum sendiri + mulai pulih"
+        print(f"{self.nama} sekarang {self.status}. Hati ini pun ikut lega~")
+
+# Eksekusi penyembuhan
+cimon = CintaUntukCimon()
+cimon.cek_status()
+cimon.kirim_cinta()
